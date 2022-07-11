@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.section-container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: gainsboro;
+    border-radius: 50px;
+    padding: 10px;
+}
