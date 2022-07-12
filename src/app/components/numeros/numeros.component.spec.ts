@@ -20,4 +20,17 @@ describe('NumerosComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+
+  it('positive number', (done: DoneFn) => {
+
+    const app = fixture.componentInstance;
+    fixture.detectChanges();
+
+    app.value$.subscribe((value)=>{
+      expect(value).toBeGreaterThan(-1);
+      done();
+    })
+  });
+
 });
